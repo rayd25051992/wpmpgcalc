@@ -26,7 +26,17 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0"></Grid>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock HorizontalAlignment="Left" Margin="29,70,0,0" TextWrapping="Wrap" Text="Tank Capacity (l): " VerticalAlignment="Top" FontSize="22"/>
+            <TextBlock HorizontalAlignment="Left" Margin="29,168,0,0" TextWrapping="Wrap" Text="Miles Travelled: " VerticalAlignment="Top" FontSize="22"/>
+            <TextBlock HorizontalAlignment="Left" Margin="29,373,0,0" TextWrapping="Wrap" Text="Total MPG: " VerticalAlignment="Top" FontSize="22"/>
+            <TextBlock HorizontalAlignment="Left" Margin="29,455,0,0" TextWrapping="Wrap" Text="Total KM/L" VerticalAlignment="Top" FontSize="22"/>
+            <TextBlock x:Name="MPG" HorizontalAlignment="Left" Margin="222,373,0,0" TextWrapping="Wrap" Text="Total MPG: " VerticalAlignment="Top" FontSize="22"/>
+            <TextBlock x:Name="KML" HorizontalAlignment="Left" Margin="228,455,0,0" TextWrapping="Wrap" Text="Total KM/L" VerticalAlignment="Top" FontSize="22"/>
+            <TextBox x:Name="lcap" HorizontalAlignment="Left" Height="72" Margin="222,47,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="153" FontSize="22"/>
+            <TextBox x:Name="mtrav" Height="72" Margin="222,146,81,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="22"/>
+            <Button Content="Calculate" HorizontalAlignment="Left" Margin="140,259,0,0" VerticalAlignment="Top"/>
+        </Grid>
     </Grid>
- 
+
 </phone:PhoneApplicationPage>
